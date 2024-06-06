@@ -16,15 +16,15 @@ const quiz: {
     name: "question_1",
     type: "list",
     message:
-      chalk.green("What is the correct way to check if two values are not equal in Typescript?"),
-    choices: ["a == b", "a === b", "a = b", "a !== b"],
+      chalk.green("What does npm stand for?"),
+    choices: ["Node Project Manager", "Node Packege Manager", "Node Programming Module", "Node Packege Module"],
   },
   {
     name: "question_2",
     type: "list",
     message:
-      chalk.green("Which of the following characters is commonly allowed in variable names in Typescript?"),
-    choices: ["$", "@", "#", "&"],
+      chalk.green("What are template literals in TypeScript primilary used for?"),
+    choices: ["Declaring variable with constant values", "Concanitating strings", "Defining multi-line strings", "Declaring object literals"],
   },
   {
     name: "question_3",
@@ -37,8 +37,8 @@ const quiz: {
     name: "question_4",
     type: "list",
     message:
-      chalk.green("In Typescript which symbol is commonly used to terminate a statement?"),
-    choices: [".", ":", ";", ","],
+      chalk.green("What is the file extension for javascript file?"),
+    choices: [".ts", ".js", ".txt", ".html"],
   },
   {
     name: "question_5",
@@ -52,7 +52,7 @@ const quiz: {
 let score: number = 0;
 
 switch (quiz.question_1) {
-  case "a !== b":
+  case "Node Packege Manager":
     console.log(chalk.bold.magenta("1.correct"));
     ++score;
     break;
@@ -63,7 +63,7 @@ switch (quiz.question_1) {
 console.log("-".repeat(60));
 
 switch (quiz.question_2) {
-  case "$":
+  case "Defining multi-line strings":
     console.log(chalk.bold.magenta("2.correct"));
     ++score;
     break;
@@ -85,7 +85,7 @@ switch (quiz.question_3) {
 console.log("-".repeat(60));
 
 switch (quiz.question_4) {
-  case ";":
+  case ".js":
     console.log(chalk.bold.magenta("4.correct"));
     ++score;
     break;
